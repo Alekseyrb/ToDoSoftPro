@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 102 138 / var(--tw-bg-opacity));
+  background-color: rgb(0 102 138/var(--tw-bg-opacity));
 }
 
 .container {
@@ -93,7 +93,7 @@ input {
 }
 
 .btn {
-  color: rgb(0 102 138 / var(--tw-bg-opacity));
+  color: rgb(0 102 138/var(--tw-bg-opacity));
   position: relative;
   place-content: center;
   place-items: center;
@@ -133,16 +133,15 @@ h1 {
 .taskList {
   display: flex;
   margin: 15px;
-
-  li {
-    margin-bottom: 10px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    background-color: #f1f1f1;
-    padding: 10px;
-    font-size: 16px;
-    text-align: left;
-  }
+}
+.taskList li {
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  text-align: left;
 }
 
 .text {
@@ -174,9 +173,10 @@ h1 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, .35);
+  background: rgba(0, 0, 0, 0.35);
   z-index: 100;
 }
+
 .modal {
   position: fixed;
   top: 130px;
@@ -188,11 +188,10 @@ h1 {
   border-radius: 10px;
   transform: translateX(-50%);
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
-
-  div {
-    margin: 5px;
-    text-align: left;
-  }
+}
+.modal div {
+  margin: 5px;
+  text-align: left;
 }
 
 h3 {
@@ -205,3 +204,4 @@ hr {
   height: 1px;
 }
 
+/*# sourceMappingURL=style.css.map */
