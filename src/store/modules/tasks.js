@@ -14,9 +14,6 @@ const mutations = {
         if (index !== -1) {
             state.tasks.splice(index, 1, updatedTask);
         }
-        // state.tasks = state.tasks.map((task) =>
-        //     task.id === updatedTask.id ? { ...task, ...updatedTask } : task
-        // );
     },
 };
 

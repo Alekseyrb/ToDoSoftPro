@@ -5,15 +5,15 @@
     <TaskInput />
 
     <div class="textCount">
-      Количество выполненных задач {{ completedTasksCount }} / {{ tasks.tasks.length }}
-      <button @click="close = true" class="btn">Посмотреть весь список задач</button>
+      Кількість виконаних завдань {{ completedTasksCount }} / {{ tasks.tasks.length }}
+      <button @click="close = true" class="btn">Переглянути весь список завдань</button>
     </div>
 
     <TaskList :tasks="tasks.tasks"/>
 
     <AllTodoList
         v-if="close"
-        title="Выполненные и не выполненные задачи"
+        title="Виконані та не виконані завдання"
         @close="close = false"
     />
   </div>

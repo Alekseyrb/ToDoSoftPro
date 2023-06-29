@@ -6,7 +6,7 @@
         placeholder="Введите новую задачу"
         :class="{invalidInput : error}"
     />
-    <button @click="addTask" class="btn">Добавить</button>
+    <button @click="addTask" class="btn">Додати</button>
     <div v-if="error" class="error">{{ error }}</div>
   </div>
 </template>
@@ -26,9 +26,13 @@ export default {
 
     const addTask = () => {
       if (newTask.value.trim() === '') {
-        error.value = 'Введите задачу';
+        error.value = 'Введіть завдання';
         newTask.value = '';
         return;
+      }
+
+      if (newTask.value.length > 80) {
+        newTask.value = newTask.value.slice(0, 79).concat('...');
       }
 
       tasks.value = {

@@ -5,14 +5,14 @@
         v-model="editedTaskTitle"
         @keydown.enter="saveTask"
     />
-  <div>
+  <div class="btnContainer">
     <button class="btn primary" @click="toggleComplete">
-      {{ task.completed ? 'Отменить' : 'Выполнить' }}
+      {{ task.completed ? 'Скасувати' : 'Виконати' }}
     </button>
     <button class="btn" @click="saveTask">
-      {{editing ? 'Сохранить' : 'Изменить'}}
+      {{editing ? 'Зберегти' : 'Змінити'}}
     </button>
-    <button class="btn danger" @click="deleteTask">Удалить</button>
+    <button class="btn danger" @click="deleteTask">Видалити</button>
   </div>
 </template>
 
