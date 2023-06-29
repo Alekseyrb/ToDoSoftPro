@@ -7,14 +7,14 @@
       {{task.title}}
     </div>
     <div v-else>
-      Пока нет выполненных задач
+      Поки що немає виконаних завдань
     </div>
     <hr/>
     <div v-for="task in incompleteTask" v-if="incompleteTask.length !== 0">
       {{task.title}}
     </div>
     <div v-else>
-      Пока нет не выполненных задач
+      Поки що немає не виконаних завдань
     </div>
   </div>
 </template>

@@ -23,7 +23,7 @@
 import {ref, computed} from 'vue';
 import TaskInput from './TaskInput.vue';
 import TaskList from './TaskList.vue';
-import AllTodoList from "@/components/AllTodoList.vue";
+import AllTodoList from "./AllTodoList.vue";
 import {useStore} from "vuex";
 
 export default {
